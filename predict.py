@@ -9,7 +9,7 @@ with open('predict_model.pkl', 'rb') as file:
 
 st.title ('Tech Salary Prediction')
 
-st.sidebar.header('Select Features For Prediction')
+st.header('Select Features For Prediction')
 
 
 Job = ('Data Engineer', 'Data Scientist', 'BI Developer',
@@ -82,13 +82,13 @@ Model = ('Remote', 'On-site', 'Hybrid')
 
 Location = ('United States','Canada', 'Others')
 
-job_title = st.sidebar.selectbox('Job Title', Job)
-experience_level = st.sidebar.selectbox('Job Level', Level)
-employment_type = st.sidebar.selectbox('Job Type', Type)
-work_models = st.sidebar.selectbox('Job Model', Model)
-company_location = st.sidebar.selectbox('Location', Location)
+job_title = st.selectbox('Job Title', Job)
+experience_level = st.selectbox('Job Level', Level)
+employment_type = st.selectbox('Job Type', Type)
+work_models = st.selectbox('Job Model', Model)
+company_location = st.selectbox('Location', Location)
 
-predict_button = st.sidebar.button('Predict')
+predict_button = st.button('Predict')
 
 if predict_button and job_title and experience_level and employment_type and work_models and company_location:
     # Create a DataFrame for the new data
