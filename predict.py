@@ -6,7 +6,7 @@ import pandas as pd
 
 with open('predict_model.pkl', 'rb') as file:
     data = pickle.load(file)
-
+st.set_page_config(layout="wide")
 
 st.title ('Tech Salary Prediction')
 
