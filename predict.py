@@ -9,7 +9,7 @@ with open('predict_model.pkl', 'rb') as file:
 
 st.title ('Tech Salary Prediction')
 
-st.header('Select Features For Prediction')
+st.header('Select Job Features For Prediction')
 
 
 Job = ('Data Engineer', 'Data Scientist', 'BI Developer',
